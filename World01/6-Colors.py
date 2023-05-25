@@ -10,5 +10,9 @@
 # Begin 40 until 47 without library [white|red|green|yellow|blue|purple|cyan|gray]
 
 # Testing -------------------------------------------------------------------------------------------------------
-randomRhing = input('Write something: ');
-print('\033[4;30;41m{0}\033[m'.format(randomRhing));
+colors = {'clear':'\033[m',
+          'red':'\033[31m',
+          'purple':'\033[35m'};
+
+name = 'David';
+print('Welcome {0}{1}{2}'.format(colors['blue'], name, colors['clear']));
