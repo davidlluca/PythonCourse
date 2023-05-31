@@ -14,10 +14,35 @@
 
 
 
-# Challenger 36 -------------------------------------------------------------------------------------------------
+# # Challenger 36 -------------------------------------------------------------------------------------------------
+# housePrice = float(input('What is the price of the house? $'));
+# personWage = float(input('What is your wage? $'));
+# years = int(input('How many years you can pay? '));
+
+# months = years * 12;
+# installments = housePrice / months;
+
+# if installments > personWage * 0.3:
+#     print('The installments price is {0:.2f}, you cannot pay for that!'.format(installments));
+# else: 
+#     print('The installments price is {0:.2f}, you can pay for that!'.format(installments));
 
 
-# Challenger 37 -------------------------------------------------------------------------------------------------
+# # Challenger 37 -------------------------------------------------------------------------------------------------
+# number = int(input('Write some number: '));
+
+# print('\n--- Choose an option ---');
+# choose = int(input('(1) - binary\n(2) - octal\n(3) - hexadecimal\n'));
+
+# if choose == 1:
+#     print('');
+    
+# elif choose == 2:
+#     print('');
+    
+# else:
+#     print('');
+
 
 
 # Challenger 38 -------------------------------------------------------------------------------------------------
