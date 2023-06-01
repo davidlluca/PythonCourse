@@ -29,26 +29,50 @@
 
 
 # # Challenger 37 -------------------------------------------------------------------------------------------------
+# import math;
 # number = int(input('Write some number: '));
 
 # print('\n--- Choose an option ---');
 # choose = int(input('(1) - binary\n(2) - octal\n(3) - hexadecimal\n'));
 
 # if choose == 1:
-#     print('');
+#     bin = bin(number);
+#     print('The number in binary: {0}'.format(bin[2:]));
     
 # elif choose == 2:
-#     print('');
+#     oct = oct(number);
+#     print('The number in octal: {0}'.format(oct[2:]));
     
 # else:
-#     print('');
+#     hex = hex(number);
+#     print('The number in hexadecimal: {0}'.format(hex[2:]));
 
 
+# # Challenger 38 -------------------------------------------------------------------------------------------------
+# value1 = int(input('Write the first number: '));
+# value2 = int(input('Write the second number: '));
 
-# Challenger 38 -------------------------------------------------------------------------------------------------
+# if value1 > value2:
+#     print('The first number "{0}" is bigger than the second number "{1}"'.format(value1, value2));
+# elif value1 < value2:
+#     print('The second number "{0}" is bigger than the first number "{1}"'.format(value2, value1));
+# else:
+#     print('The numbers are the same!');
 
 
-# Challenger 39 -------------------------------------------------------------------------------------------------
+# # Challenger 39 -------------------------------------------------------------------------------------------------
+# from datetime import date;
+# colors = {'clean':'\033[m','red':'\033[31m', 'green':'\033[32m', 'yellow':'\033[33m'};
+
+# personBirthday = int(input('Write your date of birth: '));
+# age = date.today().year - personBirthday;
+
+# if age == 18:
+#     print('You are {0}, {1}now you can enlist!{2}'.format(age, colors['green'], colors['clean']));
+# elif age > 18:
+#     print('You are {0}. {1}It is past time for you to enlist!{2}. {3} years have passed'.format(age, colors['red'], colors['clean'], age - 18));
+# else:
+#     print('You are {0}, {1}you cannot enlist yet!{2}. {3} years left'.format(age, colors['yellow'], colors['clean'], 18 - age));
 
 
 # Challenger 40 -------------------------------------------------------------------------------------------------
