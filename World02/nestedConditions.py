@@ -75,13 +75,54 @@
 #     print('You are {0}, {1}you cannot enlist yet!{2}. {3} years left'.format(age, colors['yellow'], colors['clean'], 18 - age));
 
 
-# Challenger 40 -------------------------------------------------------------------------------------------------
+# # Challenger 40 -------------------------------------------------------------------------------------------------
+# firstGrade = float(input('Write the frist grade of the student: '));
+# secondGrade = float(input('Write the second grade of the studen: '));
+# finalGrade = (firstGrade + secondGrade) / 2;
+
+# if finalGrade < 5.0:
+#     print('The final student grade is {0:.2f}, you failed!'.format(finalGrade));
+# elif finalGrade >= 5.0 and finalGrade <= 6.9:
+#     print('The final student grade is {0:.2f}, you are recovering!'.format(finalGrade));
+# else:
+#     print('The final student grade is {0:.2f}, you passed!'.format(finalGrade));
 
 
-# Challenger 41 -------------------------------------------------------------------------------------------------
+# # Challenger 41 -------------------------------------------------------------------------------------------------
+# athleteAge = int(input('Whats the athletes age? '));
+
+# if athleteAge <= 9:
+#     print('Your category is: First Junior');
+    
+# elif athleteAge > 9 and athleteAge <= 14:
+#     print('Your category is: Child');
+    
+# elif athleteAge > 14 and athleteAge <= 19:
+#     print('Your category is: Second Junior');
+    
+# elif athleteAge == 20:
+#     print('Your category is: Senior');
+    
+# else:
+#     print('Your category is: Master');
 
 
-# Challenger 42 -------------------------------------------------------------------------------------------------
+# # Challenger 42 -------------------------------------------------------------------------------------------------
+# side1 = int(input('Write the number of the side1: '));
+# side2 = int(input('Write the number of the side2: '));
+# side3 = int(input('Write the number of the side3: '));
+
+# if side1 < side2 + side3 and side2 < side1 + side3 and side3 < side1 + side2:
+#     print('\nYou can do a triangle with these sides!');
+    
+#     if side1 == side2 and side1 == side3:
+#         print('An equilateral triangle!\n');
+#     elif side1 != side2 and side1 != side3:
+#         print('A scalene triangle!\n');
+#     else: 
+#         print('An isocellar triangle!\n');
+# else:
+#     print('You cannot do a tiangle with these sides!');
 
 
 # Challenger 43 -------------------------------------------------------------------------------------------------
