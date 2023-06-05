@@ -125,10 +125,66 @@
 #     print('You cannot do a tiangle with these sides!');
 
 
-# Challenger 43 -------------------------------------------------------------------------------------------------
+# # Challenger 43 -------------------------------------------------------------------------------------------------
+# from math import pow;
+
+# personWeight = float(input('Whats is your weight? '));
+# personHeight = float(input('What is your height? '));
+# imc = personWeight / pow(personHeight, 2);
+
+# if imc < 18.5:
+#     print('Your imc is {0:.2f}, you are underweight!'.format(imc));
+    
+# elif imc > 18 and imc <= 25:
+#     print('Your imc is {0:.2f}, you are at your ideal weight!'.format(imc));
+    
+# elif imc > 25 and imc <= 30:
+#     print('Your imc is {0:.2f}, you are overweight!'.format(imc));
+    
+# elif imc > 30 and imc <= 40:
+#      print('Your imc is {0:.2f}, you are obese!'.format(imc));
+     
+# else:
+#      print('Your imc is {0:.2f}, you are morbidly obese!'.format(imc));
 
 
-# Challenger 44 -------------------------------------------------------------------------------------------------
+# # Challenger 44 -------------------------------------------------------------------------------------------------
+# productPrice = float(input('Write the products price: $'));
+
+# print('\n--- Payment Method ---')
+# payMethod = int(input('(1) - Cash/Check\n(2) - Credit Card\n'));
+
+# if payMethod == 1:
+#     newPrice = productPrice - (productPrice * 0.10);
+#     print('\nYou get a 10% of discount, so you will pay ${0:.2f} dollars for this product'.format(newPrice));
+    
+# elif payMethod == 2:
+#     print('\n---- Choose a option for the payment ---');
+#     payMethodCraditCard = int(input('(1) - cash on credit card\n(2) - 2x on credit card\n(3) - 3x or more on credit card\n'));
+    
+#     if payMethodCraditCard == 1:
+#         newPriceCreditCard = productPrice - (productPrice * 0.5);
+#         print('You get a 5% of discount, you will pay ${0} for this product'.format(newPriceCreditCard));
+        
+#     elif payMethodCraditCard == 2:
+#         installmentsX2 = productPrice / 2;
+#         print('\nYou will pay ${0:.2f} for this product, ${1:.2f} each installments!'.format(productPrice, installmentsX2));
+#     else:
+#         newPriceCreditCardX3 = productPrice + (productPrice * 0.20);
+#         installmentsX3 = newPriceCreditCardX3 / 3;
+#         print('\nYou will pay ${0} for this product, ${1:.2f} each installments'.format(newPriceCreditCardX3, installmentsX3));
+# else:
+#     print('Failed. Try again!');
 
 
-# Challenger 45 -------------------------------------------------------------------------------------------------
+# Challenger 45 keep doing -------------------------------------------------------------------------------------------------
+from random import randint;
+
+#Numbers of the game
+# stone = 1
+# paper = 2
+# scissors = 3
+
+print('--- Jokenpô game ---')
+numberPerson = int(input('(1) - Stone\n(2) - Paper\n(3) - Scissors\n'));
+numberComputer = randint(1,3);
