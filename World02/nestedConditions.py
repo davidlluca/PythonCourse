@@ -43,9 +43,12 @@
 #     oct = oct(number);
 #     print('The number in octal: {0}'.format(oct[2:]));
     
-# else:
+# elif choose == 3:
 #     hex = hex(number);
 #     print('The number in hexadecimal: {0}'.format(hex[2:]));
+    
+# else:
+#     print('Failed. Try again!');
 
 
 # # Challenger 38 -------------------------------------------------------------------------------------------------
@@ -80,9 +83,9 @@
 # secondGrade = float(input('Write the second grade of the studen: '));
 # finalGrade = (firstGrade + secondGrade) / 2;
 
-# if finalGrade < 5.0:
+# if finalGrade < 5:
 #     print('The final student grade is {0:.2f}, you failed!'.format(finalGrade));
-# elif finalGrade >= 5.0 and finalGrade <= 6.9:
+# elif finalGrade >= 5 and finalGrade < 7:
 #     print('The final student grade is {0:.2f}, you are recovering!'.format(finalGrade));
 # else:
 #     print('The final student grade is {0:.2f}, you passed!'.format(finalGrade));
@@ -94,13 +97,13 @@
 # if athleteAge <= 9:
 #     print('Your category is: First Junior');
     
-# elif athleteAge > 9 and athleteAge <= 14:
+# elif athleteAge <= 14:
 #     print('Your category is: Child');
     
-# elif athleteAge > 14 and athleteAge <= 19:
+# elif athleteAge <= 19:
 #     print('Your category is: Second Junior');
     
-# elif athleteAge == 20:
+# elif athleteAge <= 25:
 #     print('Your category is: Senior');
     
 # else:
@@ -177,14 +180,14 @@
 #     print('Failed. Try again!');
 
 
-# Challenger 45 keep doing -------------------------------------------------------------------------------------------------
-from random import randint;
+# # Challenger 45 keep doing -------------------------------------------------------------------------------------------------
+# from random import randint;
 
-#Numbers of the game
-# stone = 1
-# paper = 2
-# scissors = 3
+# #Numbers of the game
+# # stone = 1
+# # paper = 2
+# # scissors = 3
 
-print('--- Jokenpô game ---')
-numberPerson = int(input('(1) - Stone\n(2) - Paper\n(3) - Scissors\n'));
-numberComputer = randint(1,3);
+# print('--- Jokenpô game ---')
+# numberPerson = int(input('(1) - Stone\n(2) - Paper\n(3) - Scissors\n'));
+# numberComputer = randint(1,3);
