@@ -180,14 +180,51 @@
 #     print('Failed. Try again!');
 
 
-# # Challenger 45 keep doing -------------------------------------------------------------------------------------------------
-# from random import randint;
+# Challenger 45 -------------------------------------------------------------------------------------------------
+from random import randint
+from time import sleep;
 
-# #Numbers of the game
-# # stone = 1
-# # paper = 2
-# # scissors = 3
+models = ['Paper', 'Stone', 'Scissors'];
+computerPlay = randint(0, 2);
 
-# print('--- Jokenpô game ---')
-# numberPerson = int(input('(1) - Stone\n(2) - Paper\n(3) - Scissors\n'));
-# numberComputer = randint(1,3);
+print('---- JOKENPÔ GAME ----');
+personPlay = int(input('(0) - Paper\n(1) - Stone\n(2) - Scissors\nWhat is your option? '));
+
+print('\nLoading...');
+sleep(1);
+
+print('-' * 25);
+print('The computer chose {0}'.format(models[computerPlay]));
+print('You chose {0}'.format(models[personPlay]));
+print('-' * 25);
+
+if computerPlay == 0:
+    if personPlay ==  0:
+        print('The game was a draw!');
+        
+    elif personPlay == 1:
+        print('The computer won!');
+        
+    else:
+        print('You won!');
+    
+elif computerPlay == 1:
+    if personPlay == 0:
+        print('You won!');
+        
+    elif personPlay == 1:
+        print('The game was a draw!');
+        
+    else:
+        print('The computer won!');
+    
+else:
+    if personPlay == 0:
+        print('The computer won!');
+        
+    elif personPlay == 1:
+        print('You won!');
+        
+    else:
+        print('The game was a draw!');
+
