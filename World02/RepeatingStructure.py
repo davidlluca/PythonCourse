@@ -68,9 +68,27 @@
 #     print('{0}x{1} = {2}'.format(number, count, result));
 
 
-# Challenger 50 -------------------------------------------------------------------------------------------------
+# # Challenger 50 -------------------------------------------------------------------------------------------------
+# sum = 0;
 
-# Challenger 51 -------------------------------------------------------------------------------------------------
+# for numbers in range(0,6):
+#     randomNumbers = int(input('Write some number: '));
+#     if randomNumbers % 2 == 0:
+#         sum = sum + randomNumbers;
+        
+# print('The sum of the even numbers is {0}'.format(sum));
+
+
+# # Challenger 51 -------------------------------------------------------------------------------------------------
+# print('--- Arithmetic Progression---');
+
+# beginNumber = int(input('Write the first number: '));
+# jumpNumber = int(input('Write the jump between the number: '));
+# finalNumber = beginNumber + (10 - 1) * jumpNumber
+
+# for pa in range(beginNumber, finalNumber, jumpNumber):
+#     print('{0}'.format(pa), end=' ');
+
 
 # Challenger 52 -------------------------------------------------------------------------------------------------
 
