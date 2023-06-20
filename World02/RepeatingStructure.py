@@ -90,12 +90,41 @@
 #     print('{0}'.format(pa), end=' ');
 
 
-# Challenger 52 -------------------------------------------------------------------------------------------------
+# # Challenger 52 -------------------------------------------------------------------------------------------------
+# number = int(input('Write some number: '));
+# total = 0;
 
-# Challenger 53 -------------------------------------------------------------------------------------------------
+# for csNumber in range(1, number + 1):
+#     if number % csNumber == 0:
+#         total += 1;
+#         print('\033[31m{0}\033[m'.format(csNumber), end=' ');
+        
+#     else:
+#         print('{0}'.format(csNumber), end=' ');
+        
+# if total == 2:
+#     print('\nThis number is a prime number!');
+# else:
+#     print('\nThis number is not a prime number. It was divided {0} times'.format(total));
+
+
+# # Challenger 53 -------------------------------------------------------------------------------------------------
+# sentence = str(input('Write something random: ')).strip().upper();
+# word = sentence.split();
+# tgther = ''.join(word)
+# inverse = '';
+
+# for newSentence in range(len(tgther) - 1, -1, -1):
+#     inverse += tgther[newSentence];
+    
+# if inverse == tgther:
+#     print('{0} {1}\n{2}It is a palindrome!{3}'.format(tgther, inverse, '\033[32m', '\033[m'));
+# else:
+#     print('{0} {1}\n{2}This sentence is not a palindrome{3}'.format(tgther, inverse, '\033[31m', '\033[m'));
+
 
 # Challenger 54 -------------------------------------------------------------------------------------------------
 
 # Challenger 55 -------------------------------------------------------------------------------------------------
 
-# Challenger 56 -------------------------------------------------------------------------------------------------;
+# Challenger 56 -------------------------------------------------------------------------------------------------
