@@ -123,8 +123,47 @@
 #     print('{0} {1}\n{2}This sentence is not a palindrome{3}'.format(tgther, inverse, '\033[31m', '\033[m'));
 
 
-# Challenger 54 -------------------------------------------------------------------------------------------------
+# # Challenger 54 -------------------------------------------------------------------------------------------------
+# from datetime import date;
 
-# Challenger 55 -------------------------------------------------------------------------------------------------
+# count = 0;
+# count2 = 0;
+
+# for birthday in range(0,7):
+#     btPerson = int(input('Write the year you were born: '));
+#     age = date.today().year - btPerson;
+
+#     if age >= 21:
+#         count += 1;
+        
+#     else:
+#         count2 += 1;
+    
+# print('\n{0} {1}have reached{2} the age of majority'.format(count, '\033[32m', '\033[m'));
+# print('{0} {1}have not reached{2} the age of majority yet'.format(count2, '\033[31m', '\033[m')); 
+
+
+# # Challenger 55 -------------------------------------------------------------------------------------------------
+# bigger = 0;
+# smaller = 0;
+
+# for weight in range(1,6):
+#     wgPerson = float(input('write the person weight: '));
+    
+#     if weight == 1:
+#         bigger = wgPerson;
+#         smaller = wgPerson;
+#     else: 
+#         if wgPerson > bigger:
+#             bigger = wgPerson;
+            
+#         if wgPerson < smaller:
+#             smaller = wgPerson;
+
+# print('The biggest person weight is {0}'.format(bigger));
+# print('The smmalest person weight is {0}'.format(smaller));
+
 
 # Challenger 56 -------------------------------------------------------------------------------------------------
+
+
