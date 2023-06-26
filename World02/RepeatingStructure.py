@@ -165,5 +165,32 @@
 
 
 # Challenger 56 -------------------------------------------------------------------------------------------------
+totalAge = 0;
+mediaAge = 0;
+highAgeMan = 0;
+highNameMan = '';
+ageCountWoman = 0;
 
+for people in range(1,5):
+    print('\n--- {0}º Person ---'.format(people));
+    name = str(input('What is your name? ')).strip();
+    age = int(input('What is your age? '));
+    sex = str(input('Sex [M/F]: ')).strip().lower();
+    totalAge += age;
+    
+    if people == 1 and sex == 'm':
+        highAgeMan = age;
+        highNameMan = name;
+        
+    if sex == 'm' and age > highAgeMan:
+        highAgeMan = age;
+        highNameMan = name;
+    
+    if age < 20 and sex == 'f':
+        ageCountWoman += 1
+    
+mediaAge = totalAge / 4;
 
+print('The media of the ages is {0:.1f}'.format(mediaAge));
+print('The oldest man is {0}, his name is {1}'.format(highAgeMan, highNameMan));
+print('There are {0} women with less 20 years old'.format(ageCountWoman));
